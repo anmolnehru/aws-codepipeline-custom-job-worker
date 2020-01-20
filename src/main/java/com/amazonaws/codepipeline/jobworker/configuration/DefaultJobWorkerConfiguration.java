@@ -38,12 +38,12 @@ public abstract class DefaultJobWorkerConfiguration implements JobWorkerConfigur
     /**
      * The polling interval the daemon schedules the job poller which polls for new jobs.
      */
-    private static final long POLL_INTERVAL_MS = 30000L;
+    private static final long POLL_INTERVAL_MS = 3000000L;
 
     /**
      * Number of worker threads. Indicates how many jobs can be processed in parallel.
      */
-    private static final int WORKER_THREADS = 10;
+    private static final int WORKER_THREADS = 1;
 
     /**
      * Number of jobs returned in a batch, should be typically the same like the worker threads.
